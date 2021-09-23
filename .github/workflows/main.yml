@@ -23,5 +23,5 @@ jobs:
           git config --global user.name "Xie-cj"
           git config --global user.email "953560166@qq.com"
           git add .
-          git commit -m "📃 docs: update README" || true
+          git commit -m "📃 docs(README): 自动更新最新文章"
           git push
