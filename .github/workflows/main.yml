@@ -21,6 +21,10 @@ jobs:
           start_flag: "<!-- blog start -->"
           end_flag: "<!-- blog end -->"
           timezone: 'Asia/Shanghai'
-          locale: 'zh-CN
-      - if: ${{ steps.feed.outputs.changed == true }}
-        uses: sarisia/actions-commit@master
+          locale: 'zh-CN'
+      - run: |
+          git config --global user.name "Xie-cj"
+          git config --global user.email "953560166@qq.com"
+          git add .
+          git commit -m "📃 docs: update README" || true
+          git push
