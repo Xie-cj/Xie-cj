@@ -19,7 +19,8 @@ jobs:
           end_flag: "<!-- blog end -->"
           timezone: 'Asia/Shanghai'
           locale: 'zh-CN'
-      - run: |
+      - if: ${{ steps.feed.outputs.changed == true }}
+        run: |
           git config --global user.name "Xie-cj"
           git config --global user.email "953560166@qq.com"
           git add .
