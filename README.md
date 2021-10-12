@@ -4,5 +4,5 @@
 
 ### Latest Posts
 <!-- blog start -->
-- [Hello World](https://blog.xcj.im/post/hello-world/) - 2021-06-04
+- [Hello World](https://blog.xcj.im/post/hello-world/) - 2021-07-01
 <!-- blog end -->
